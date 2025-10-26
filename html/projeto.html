@@ -9,12 +9,14 @@
 
 <body>
   <header>
-    <img src="../imagens/Nosso Logo.png" alt="Logo Lar da Esperança" width="120">
-    <nav>
+    <div class="topo">
+      <img id="logo-grande" src="../imagens/Nosso_logo.png" alt="Logo Lar da Esperança">
+    </div>
+    <nav class="menu-navegacao">
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html" class="ativo">Início</a></li>
         <li><a href="projeto.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="cadastro.html">Seja Doador</a></li>
       </ul>
     </nav>
   </header>
@@ -26,20 +28,30 @@
 
       <article class="projeto">
         <h2>Amigos do Tempo</h2>
-        <img src="../imagens/Imagem_02.jpg" alt="Voluntários interagindo com idosos" width="500">
-        <img src="../imagens/Imagem_08.JPG" alt="oficina de arte" width="500">
+        <img src="../imagens/Imagem_02.jpg" alt="Voluntários interagindo com idosos" width="400">
+        <img src="../imagens/Imagem_08.JPG" alt="oficina de arte" width="400">
         <p>Atividades recreativas, rodas de conversa e oficinas de arte para promover o bem-estar e o convívio social.</p>
       </article>
 
       <article class="projeto">
         <h2>Saúde em Foco</h2>
         <img src="../imagens/Imagem_05.jpeg" alt="Equipe de saúde atendendo idosos" width="400">
+        <img src="../imagens/Imagem_06.jpeg" alt="Equipe de saúde atendendo idosos" width="400">
         <p>Parceria com profissionais de saúde para acompanhamento médico, fisioterapia e orientação nutricional.</p>
       </article>
 
       <article class="projeto">
         <h2>Doe Esperança</h2>
+         <img src="../imagens/Imagem_09.jpg" alt="Alimentos doados" width="400">
+        <img src="../imagens/Imagem_07.jpg" alt="Alimentos doados" width="400">
         <p>Contribua com doações de alimentos, roupas, materiais de higiene ou recursos financeiros para ajudar na manutenção do Lar.</p>
+
+        <section id="chamada-voluntariado">
+          <h3>Quer fazer parte dessa corrente do bem? Participe você também! Seu tempo e carinho fazem a diferença na vida de nossos idosos.</h3>
+          <p>Você pode ser um voluntário ou fazer uma doação para apoiar o Lar da Esperança.</p>
+          <a href="cadastro.html" class="botao-doar">Quero ser Doador ou Voluntário</a>
+        </section>
+
       </article>
     </section>
   </main>

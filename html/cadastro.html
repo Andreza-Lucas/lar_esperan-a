@@ -9,21 +9,36 @@
 
 <body>
   <header>
-    <img src="../imagens/Nosso Logo.png" alt="Logo Lar da Esperança" width="120">
-    <nav>
+    <div class="topo">
+      <img id="logo-grande" src="../imagens/Nosso_logo.png" alt="Logo Lar da Esperança">
+    </div>
+    <nav class="menu-navegacao">
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html" class="ativo">Início</a></li>
         <li><a href="projeto.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="cadastro.html">Seja Doador</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h1>Cadastro de Voluntário</h1>
+    
     <form>
       <fieldset>
-        <legend>Informações Pessoais</legend>
+         <fieldset>
+           <legend>Tipo de Participação</legend>
+            <label>
+             <input type="radio" name="tipo" value="doador" required>
+               Doador
+            </label>
+
+           <label>
+            <input type="radio" name="tipo" value="voluntario">
+              Voluntário
+           </label>
+         </fieldset>
+
 
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -39,6 +54,9 @@
 
         <label for="nascimento">Data de Nascimento:</label>
         <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+         <label for="mensagem">Por que deseja participar?</label>
+         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
       </fieldset>
 
       <fieldset>

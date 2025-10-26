@@ -11,3 +11,178 @@ header {
   text-align: center;
   padding: 20px;
 }
+
+/* ===== Cabeçalho ===== */
+header {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding-bottom: 10px;
+}
+
+/* Logo grande */
+#logo-grande {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Menu */
+.menu-navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #006699;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-navegacao ul li {
+  margin: 0 15px;
+}
+
+.menu-navegacao ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  transition: background 0.3s;
+}
+
+.menu-navegacao ul li a:hover,
+.menu-navegacao ul li a.ativo {
+  background-color: #004466;
+  border-radius: 5px;
+}
+
+/* ===== Conteúdo ===== */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #006699;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #004466;
+}
+/* Botão do link na página de projetos */
+.botao-doar {
+  display: inline-block;
+  background-color: #006699;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-doar:hover {
+  background-color: #004466;
+}
+
+/* Estilo para o fieldset do formulário */
+form fieldset {
+  border: 2px solid #006699;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+form legend {
+  font-weight: bold;
+  color: #004466;
+}
+
+form label {
+  margin-right: 15px;
+}
+/* --- Seção Missão, Visão e Valores --- */
+#missao-visao-valores {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+#missao-visao-valores h2 {
+  color: #004466;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #cce0ff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #006699;
+  margin-bottom: 10px;
+}
+
+.card p, 
+.card ul {
+  color: #333;
+  text-align: left;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
