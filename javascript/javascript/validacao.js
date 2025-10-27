@@ -23,19 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Validações
     
     if (nome.length < 3)
-      erros.push("⚠️ O nome deve conter pelo menos 3 caracteres.");
+      erros.push("O nome deve conter pelo menos 3 caracteres.");
 
     if (!email.includes("@") || !email.includes("."))
-      erros.push("⚠️ Informe um e-mail válido.");
+      erros.push(" Informe um e-mail válido.");
 
     if (!/^[0-9]{11}$/.test(cpf))
-      erros.push("⚠️ O CPF deve conter exatamente 11 números.");
+      erros.push(" O CPF deve conter exatamente 11 números.");
 
     if (!/^[0-9]{10,11}$/.test(telefone))
-      erros.push("⚠️ Telefone deve conter 10 ou 11 números.");
+      erros.push(" Telefone deve conter 10 ou 11 números.");
 
     if (!tipo)
-      erros.push("⚠️ Selecione se deseja ser Doador ou Voluntário.");
+      erros.push(" Selecione se deseja ser Doador ou Voluntário.");
 
     // Exibição de feedback
    
@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
       feedback.innerHTML = erros.join("<br>");
     } else {
       feedback.classList.add("sucesso");
-      feedback.innerHTML = "🎉 Cadastro realizado com sucesso!";
+      feedback.innerHTML = " Cadastro realizado com sucesso!";
 
       // Cria objeto e salva no LocalStorage
       const dados = { nome, email, cpf, telefone, tipo, data: new Date().toLocaleString() };
       localStorage.setItem("cadastro", JSON.stringify(dados));
 
-      console.log("✅ Dados salvos no LocalStorage:", dados);
+      console.log(" Dados salvos no LocalStorage:", dados);
 
       form.reset();
     }

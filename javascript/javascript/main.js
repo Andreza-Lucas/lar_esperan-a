@@ -40,3 +40,33 @@ document.addEventListener("DOMContentLoaded", () => {
     location.reload();
   });
 });
+
+// Alternância de modo escuro
+const themeButton = document.getElementById("toggle-theme");
+const userPref = localStorage.getItem("theme");
+
+if (userPref === "dark") {
+  document.body.classList.add("dark-mode");
+}
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+});
+
+// Atalho "D" para modo escuro
+document.addEventListener("keydown", (e) => {
+  if (e.key.toLowerCase() === "d") {
+    themeButton.click();
+  }
+});
+
+// Botão leva ao formulário
+const botaoForm = document.getElementById("btn-formulario");
+botaoForm.addEventListener("click", () => {
+  document.getElementById("formulario").scrollIntoView({ behavior: "smooth" });
+});

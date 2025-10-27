@@ -1,0 +1,51 @@
+
+/* Modo escuro */
+body.dark-mode {
+  --cor-fundo: #121212;
+  --cor-texto: #f5f5f5;
+  --cor-primaria: #90caf9;
+  --cor-secundaria: #1e1e1e;
+  --cor-destaque: #ffb703;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+/* Contraste alto */
+body.high-contrast {
+  --cor-fundo: #F2F2F2;
+  --cor-texto: #333333;
+  --cor-primaria: #ffff00;
+  --cor-secundaria: #000000;
+  --cor-destaque: #00ff00;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--cor-primaria);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+#toggle-theme {
+  background: var(--cor-primaria);
+  color: var(--cor-fundo);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#toggle-theme:hover,
+#toggle-theme:focus {
+  background: var(--cor-destaque);
+  outline: 2px solid var(--cor-primaria);
+}
