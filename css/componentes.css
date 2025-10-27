@@ -1,0 +1,73 @@
+/* Componentes.css */
+
+/* Cards de Missão, Visão e Valores */
+#missao-visao-valores {
+  display: flex;
+  justify-content: center;
+  gap: var(--espaco-3);
+  flex-wrap: wrap;
+  margin: var(--espaco-4) auto;
+}
+
+#missao-visao-valores article {
+  background: var(--cor-clara);
+  border: 2px solid var(--cor-secundaria);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: var(--espaco-3);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#missao-visao-valores article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões padrão */
+button, .btn {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+  border: none;
+  padding: var(--espaco-2) var(--espaco-3);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: var(--cor-media);
+  cursor: not-allowed;
+}
+
+/* Formulário */
+form {
+  display: grid;
+  gap: var(--espaco-2);
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--cor-clara);
+  padding: var(--espaco-4);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  padding: var(--espaco-2);
+  border: 1px solid var(--cor-media);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--cor-secundaria);
+  outline: none;
+  box-shadow: 0 0 5px var(--cor-secundaria);
+}

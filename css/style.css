@@ -1,21 +1,58 @@
+/*Style.css - Base do designer e cores*/
+:root {
+  /* Cores primárias */
+  --cor-primaria: #5BD9D9;
+  --cor-secundaria: #307373;
+
+  /* Cores neutras */
+  --cor-fundo: #F2F2F2;
+  --cor-escura: #333333;
+  --cor-media: #666666;
+
+  /* Cores de destaque */
+  --cor-destaque: #F20C0C;
+  --cor-sucesso: #2ecc71;
+  --cor-aviso: #f39c12;
+
+  /* Espaçamento modular */
+  --espaco-1: 8px;
+  --espaco-2: 16px;
+  --espaco-3: 24px;
+  --espaco-4: 32px;
+  --espaco-5: 48px;
+  --espaco-6: 64px;
+}
+/* Hierarquia de títulos */
+h1 { font-size: 2.5rem; color: var(--cor-primaria); }
+h2 { font-size: 2rem; color: var(--cor-primaria); }
+h3 { font-size: 1.5rem; color: var(--cor-primaria); }
+p, li { font-size: 1rem; color: var(--cor-escura); }
+small { font-size: 0.875rem; color: var(--cor-escura); }
+
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Inicio */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fdf6ec;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #c0392b;
-  color: white;
+  background-color:var(--cor-primaria);
+  color: var(--cor-fundo);
   text-align: center;
   padding: 20px;
 }
 
-/* ===== Cabeçalho ===== */
+/* Cabeçalho */
 header {
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo);
   padding-bottom: 10px;
 }
 
@@ -32,7 +69,7 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #006699;
+  background-color: var(--cor-primaria);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -44,105 +81,39 @@ header {
 
 .menu-navegacao ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--cor-escura);
   font-weight: bold;
   display: block;
   padding: 15px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .menu-navegacao ul li a:hover,
 .menu-navegacao ul li a.ativo {
-  background-color: #004466;
+  background-color: var(--cor-secundaria);
   border-radius: 5px;
 }
 
-/* ===== Conteúdo ===== */
+/* Conteúdo */
 main {
   max-width: 1000px;
   margin: 30px auto;
   padding: 20px;
 }
-
-/* ===== Rodapé ===== */
-footer {
-  background-color: #004466;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  margin-top: 40px;
+.missao-visao-valores {
+    color: var(--cor-primaria);
 }
 
-/* Formulário */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 500px;
-  margin: 20px auto;
-}
 
-form input, form textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form button {
-  background-color: #006699;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-form button:hover {
-  background-color: #004466;
-}
-/* Botão do link na página de projetos */
-.botao-doar {
-  display: inline-block;
-  background-color: #006699;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.botao-doar:hover {
-  background-color: #004466;
-}
-
-/* Estilo para o fieldset do formulário */
-form fieldset {
-  border: 2px solid #006699;
-  border-radius: 8px;
-  padding: 10px 15px;
-  margin-bottom: 15px;
-}
-
-form legend {
-  font-weight: bold;
-  color: #004466;
-}
-
-form label {
-  margin-right: 15px;
-}
-/* --- Seção Missão, Visão e Valores --- */
+/* Seção Missão, Visão e Valores */
 #missao-visao-valores {
   text-align: center;
   padding: 40px 20px;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo);
 }
 
 #missao-visao-valores h2 {
-  color: #004466;
+  color: var(--cor-primaria);
   margin-bottom: 30px;
   font-size: 1.8em;
 }
@@ -155,8 +126,8 @@ form label {
 }
 
 .card {
-  background-color: white;
-  border: 2px solid #cce0ff;
+  background-color: var(--cor-fundo);
+  border: 2px solid --cor-media;
   border-radius: 12px;
   padding: 20px;
   width: 280px;
@@ -170,13 +141,13 @@ form label {
 }
 
 .card h3 {
-  color: #006699;
+  color: var(--cor-primaria);
   margin-bottom: 10px;
 }
 
 .card p, 
 .card ul {
-  color: #333;
+  color: var(--cor-escura);
   text-align: left;
   font-size: 0.95em;
   line-height: 1.5em;
@@ -185,4 +156,85 @@ form label {
 .card ul {
   list-style-type: disc;
   padding-left: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer, p {
+    color: var(--cor-fundo);
+}
+
+/* Projetos */
+
+#projeto, p {
+  color: var(--cor-escura);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid var(--cor-fundo);
+  border-radius: 6px;
+}
+
+form button {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: var(--cor-secundaria);
+}
+/* Botão do link na página de projetos */
+.botao-doar {
+  display: inline-block;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-fundo);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-doar:hover {
+  background-color: var(--cor-secundaria);
+}
+
+/* Estilo para o fieldset do formulário */
+form fieldset {
+  border: 2px solid var(--cor-secundaria);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+form legend {
+  font-weight: bold;
+  color: var(--cor-secundaria);
+}
+
+form label {
+  margin-right: 15px;
 }

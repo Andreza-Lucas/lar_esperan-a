@@ -1,0 +1,30 @@
+/* Responsivo.CSS */
+
+/* Breakpoint 1200px */
+@media (max-width: 1200px) {
+  header img { height: 80px; }
+}
+
+/* Breakpoint 992px */
+@media (max-width: 992px) {
+  nav ul { flex-direction: column; text-align: center; }
+  #missao-visao-valores { flex-direction: column; align-items: center; }
+}
+
+/* Breakpoint 768px */
+@media (max-width: 768px) {
+  header { flex-direction: column; align-items: center; }
+  h1 { font-size: 2rem; }
+}
+
+/* Breakpoint 576px */
+@media (max-width: 576px) {
+  h2 { font-size: 1.5rem; }
+  p { font-size: 0.95rem; }
+}
+
+/* Breakpoint 400px */
+@media (max-width: 400px) {
+  h1 { font-size: 1.4rem; }
+  button, .btn { width: 100%; }
+}
