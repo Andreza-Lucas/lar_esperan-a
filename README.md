@@ -61,7 +61,7 @@ O projeto foi construído com **HTML, CSS e JavaScript**, aplicando boas prátic
 
 ## 🔗 Links
 - **Repositório:** [https://github.com/Andreza-Lucas/lar_esperan-a](https://github.com/Andreza-Lucas/lar_esperan-a)  
-- **Site publicado:** [adicione aqui o link do GitHub Pages]
+- **Site publicado:** euphonious-beijinho-f3d744.netlify.app
 
 ---
 
